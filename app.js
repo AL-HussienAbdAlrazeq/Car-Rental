@@ -1,13 +1,13 @@
 import express from "express";
 import { connection } from "./database/db.connection.js";
-
 import specialRouter from "./src/modules/Special/special.routes.js";
 import { globalError } from "./src/middleware/globalError.js";
 import customerRouter from "./src/modules/Customer/customer.routes.js";
 import carRouter from "./src/modules/Car/car.routes.js";
 import rentalRouter from "./src/modules/Rental/rental.routes.js";
+import "dotenv/config";
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;;
 
 connection();
 app.use(express.json());

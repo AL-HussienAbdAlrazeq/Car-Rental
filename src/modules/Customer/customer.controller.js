@@ -23,7 +23,7 @@ const signin = async (req, res) => {
   } else {
     const token = jwt.sign(
       { userId: user._id },
-      "my-name-is-Hussein",
+      process.env.SECRET_KEY,
       (err, token) => {
         res.status(200).json({ message: "Login", token });
       }

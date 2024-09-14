@@ -13,10 +13,6 @@ carRouter.get('/:id' , catchError(getSpecificCar))
 carRouter.get('/' , catchError(getAllCars))
 carRouter.put('/:id' ,validate(UpdateCarValidation), catchError(updateCar))
 carRouter.delete('/:id' , catchError(deleteCar))
-// carRouter.get('/model',getModel)
-// carRouter.get('/status' , getStatus)
-// carRouter.get('/rent' , getRentedCar)
-
 
 
 export default carRouter

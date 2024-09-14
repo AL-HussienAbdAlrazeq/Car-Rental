@@ -49,19 +49,6 @@ const deleteCar = async (req,res)=>{
 
 
 
-// const getStatus =async (req,res)=>{
-//     const car = await db.collection('cars').find( {rental_status:"Available"}  ).toArray()
-//     res.json({car })
-// }
-
-
-
-// const getRentedCar =async (req,res)=>{
-//     const car = await db.collection('cars').find( {rental_status:"Rented"}  ).toArray()
-//     res.json({car })
-// }
-
-
 
 
 
@@ -73,7 +60,4 @@ export{
     getAllCars,
     updateCar,
     deleteCar
-    // getModel,
-    // getStatus,
-    // getRentedCar
 }
